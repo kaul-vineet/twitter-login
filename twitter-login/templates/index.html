@@ -1,0 +1,11 @@
+{% block body %}
+Flask Login App
+{% if session['screen_name'] %}
+Hello { { session['screen_name'] }}!
+{% else %}
+
+Sign in with twitter.
+
+
+{% endif %}
+{% endblock %}
